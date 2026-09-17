@@ -30,11 +30,11 @@ EMBED_API_KEY = _get_secret("AILAB_API_KEY")
 #CHAT_MODEL = "ailab/Qwen/Qwen3.5-35B-A3B"
 
 
-BASE_URL_LLM = "https://aicon.air.id/"
-CHAT_MODEL = "MDG/Qwen3.5-35B-A3B"
+BASE_URL_LLM = _get_secret("BASE_URL_LLM")
+CHAT_MODEL = _get_secret("CHAT_MODEL")
 
-BASE_URL_EMBED = "https://llmservice.air.id"
-EMBED_MODEL = "ailab/bge-m3"
+BASE_URL_EMBED = _get_secret("BASE_URL_EMBED")
+EMBED_MODEL = _get_secret("EMBED_MODEL")
 
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")

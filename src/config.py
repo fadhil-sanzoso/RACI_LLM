@@ -26,12 +26,13 @@ def _get_secret(key, required=True):
 CHAT_API_KEY = _get_secret("AI_LAB_API_KEY")
 EMBED_API_KEY = _get_secret("AILAB_API_KEY")
 
-#BASE_URL = "https://llmservice.air.id"
-#CHAT_MODEL = "ailab/Qwen/Qwen3.5-35B-A3B"
-#EMBED_MODEL = "ailab/bge-m3"
 
-BASE_URL = "https://aicon.air.id/"
+#CHAT_MODEL = "ailab/Qwen/Qwen3.5-35B-A3B"
+
+BASE_URL_LLM = "https://llmservice.air.id"
 CHAT_MODEL = "MDG/Qwen3.5-35B-A3B"
+
+BASE_URL_EMBED = "https://aicon.air.id/"
 EMBED_MODEL = "ailab/bge-m3"
 
 

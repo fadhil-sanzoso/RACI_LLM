@@ -29,10 +29,11 @@ EMBED_API_KEY = _get_secret("AILAB_API_KEY")
 
 #CHAT_MODEL = "ailab/Qwen/Qwen3.5-35B-A3B"
 
-BASE_URL_LLM = "https://llmservice.air.id"
+
+BASE_URL_LLM = "https://aicon.air.id/"
 CHAT_MODEL = "MDG/Qwen3.5-35B-A3B"
 
-BASE_URL_EMBED = "https://aicon.air.id/"
+BASE_URL_EMBED = "https://llmservice.air.id"
 EMBED_MODEL = "ailab/bge-m3"
 
 

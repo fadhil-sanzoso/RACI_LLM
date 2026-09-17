@@ -26,10 +26,6 @@ def _get_secret(key, required=True):
 CHAT_API_KEY = _get_secret("AI_LAB_API_KEY")
 EMBED_API_KEY = _get_secret("AILAB_API_KEY")
 
-
-#CHAT_MODEL = "ailab/Qwen/Qwen3.5-35B-A3B"
-
-
 BASE_URL_LLM = _get_secret("BASE_URL_LLM")
 CHAT_MODEL = _get_secret("CHAT_MODEL")
 

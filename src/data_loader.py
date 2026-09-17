@@ -11,12 +11,12 @@ from . import config
 
 @st.cache_resource(show_spinner=False)
 def get_chat_client():
-    return OpenAI(api_key=config.CHAT_API_KEY, base_url=config.BASE_URL)
+    return OpenAI(api_key=config.CHAT_API_KEY, base_url=config.BASE_URL_LLM)
 
 
 @st.cache_resource(show_spinner=False)
 def get_embed_client():
-    return OpenAI(api_key=config.EMBED_API_KEY, base_url=config.BASE_URL)
+    return OpenAI(api_key=config.EMBED_API_KEY, base_url=config.BASE_URL_EMBED)
 
 
 def _require_file(path, hint):
